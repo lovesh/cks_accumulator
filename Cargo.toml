@@ -3,8 +3,9 @@ name = "cks_accumulator"
 version = "0.1.0"
 authors = ["lovesh <lovesh.bond@gmail.com>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Pairing based accumulator from the paper - An Accumulator Based on Bilinear Maps and Efficient Revocation for Anonymous Credentials"
+license = "Apache-2.0"
+repository = "https://github.com/lovesh/cks_accumulator"
 
 [dependencies]
 rand = "0.7"
