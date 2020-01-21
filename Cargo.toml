@@ -1,6 +1,6 @@
 [package]
 name = "cks_accumulator"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["lovesh <lovesh.bond@gmail.com>"]
 edition = "2018"
 description = "Pairing based accumulator from the paper - An Accumulator Based on Bilinear Maps and Efficient Revocation for Anonymous Credentials"
@@ -14,7 +14,7 @@ serde = "1.0"
 serde_derive = "1.0"
 
 [dependencies.amcl_wrapper]
-version = "0.1.7"
+version = "0.3.1"
 default-features = false
 features = ["bls381"]
 

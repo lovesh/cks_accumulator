@@ -428,7 +428,7 @@ mod tests {
     #[test]
     fn test_accumulator_addition_removal() {
         let size = 10;
-        let (accum, mut state, entries, trapdoor, z) =
+        let (accum, mut state, entries, _, z) =
             setup_accumulator_for_testing(size, "test".as_bytes());
         let accum_1 = accum.add_index(1, &entries, &mut state);
         let witness_1 = Witness::for_index(1, &state, &entries);
@@ -474,7 +474,7 @@ mod tests {
     #[test]
     fn test_accumulator_addition_removal_random_indices() {
         let size = 20;
-        let (accum, mut state, entries, trapdoor, z) =
+        let (accum, mut state, entries, _, z) =
             setup_accumulator_for_testing(size, "test".as_bytes());
 
         let mut rng = thread_rng();
@@ -513,7 +513,7 @@ mod tests {
     #[test]
     fn test_accumulator_witness_update() {
         let size = 20;
-        let (accum, mut state, entries, trapdoor, z) =
+        let (accum, mut state, entries, _, z) =
             setup_accumulator_for_testing(size, "test".as_bytes());
 
         // Do in order:
